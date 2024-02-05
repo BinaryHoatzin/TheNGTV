@@ -1,0 +1,158 @@
+﻿
+/* All code related to the header section */
+
+
+#SuperContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #221f1f; /* #221f1f*/
+    overflow: scroll;
+}
+
+
+#LogoAndSearchBarContainer {
+
+    background-color: #221f1f;
+}
+
+
+
+
+
+#LogoArea {
+    background-color: #221f1f;
+}
+
+
+
+
+#Logo img {
+        width: 40%;
+        /* min-width: 7em; */
+        /*  max-width: 18em; */
+        height: 40%;
+        object-fit: contain;
+}
+
+
+
+#SearchBarBox {
+    display: flex;
+    justify-content: center;
+    background-color: #221f1f;
+}
+
+
+
+
+
+#SearchBar {
+    width: 50%;
+    height: 3em;
+    border-radius: 25px;
+    background-color: rgb(65, 61, 62);
+}
+
+
+#InfoAboutContentIsHere {
+    width: 100%;
+    height: 25rem;
+     background-color: lawngreen;
+    /* background-color: rgb(40, 35, 44);*/
+}
+
+/* This is the outer banner style code right here */ 
+
+#OuterBanner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 33%);
+    grid-template-rows: 100%;
+    gap: 10px;
+    width: 100%;
+    height: 25rem;
+    background-color: greenyellow;
+    background-color: rgb(2, 10, 10);
+    overflow: hidden;
+    z-index: auto;
+}
+
+
+.AllItems {
+    position: relative;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.AllItems img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+
+}
+
+
+
+#CenterItem {
+ grid-area: 1/2/2/3;
+
+
+}
+
+
+
+/* InnerBanner Code Stars Here */
+
+
+#InnerBanner {
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 33% );
+    grid-template-rows: 100%;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#LeftControl {     /* Pushes item to the left in the carousel when clicked */
+    background-color: purple;
+}
+
+
+#HighLightBox {
+    grid-area: 1/2/2/3;
+    background-color: transparent;
+}
+
+
+#HighLightBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+#RightControl {    /* Pushes item to the right in the carousel when clicked */
+    background-color: transparent;
+}
+
+
+/* InnerBanner Code Ends Here*/
+
+
+#Carousel {
+
+    position: relative;
+}
+
+

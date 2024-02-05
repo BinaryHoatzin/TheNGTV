@@ -1,0 +1,58 @@
+﻿body {
+    background-color: black;
+}
+
+
+
+#holder {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+#RandomTextColorFormating {
+    color: yellow;
+}
+
+
+.TheLoadingBar {
+    width: 300px;
+    height: 20px;
+    border: 5px solid red;
+}
+
+
+    .TheLoadingBar .TheProgress {
+        height: 100%;
+        width: 10%;
+        background-color: #4cff00;
+        animation: ProgressAnimation 6s linear 1
+    }
+
+
+
+
+
+
+@keyframes ProgressAnimation {
+
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 50%
+    }
+
+    70% {
+        width: 10%;
+    }
+
+
+    100% {
+        width: 100%;
+    }
+}

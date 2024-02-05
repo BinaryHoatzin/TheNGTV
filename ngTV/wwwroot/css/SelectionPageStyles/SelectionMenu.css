@@ -1,0 +1,45 @@
+﻿#Info {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: antiquewhite;
+    /* background-image: url(~/Pics/SelectionPagePics/ContentInfoPics/Green.png);*/
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+#TheMenu {
+     width: 100%;
+    height: 100%;
+    background-color: plum;
+     overflow-y: scroll; 
+}
+
+
+.MenuItem {
+    height: 5em;
+    width: 100%;
+    border-bottom: 4px solid grey;
+    background-color: rgb(170, 148, 148);
+}
+
+
+
+#Description {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+/* 
+#DescriptionBox {
+    background-color: green;
+}
+
+  
+
+
+*/

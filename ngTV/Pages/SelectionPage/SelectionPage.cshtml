@@ -1,0 +1,75 @@
+﻿@page
+@model ngTV.Pages.SelectionPage.SelectionPageModel
+@{
+}
+<link href="~/css/SelectionPageStyles/SelectionPage.css" rel="stylesheet" type="text/css">  <!--Whole SelectionPage style sheet  -->
+<link href="~/css/SelectionPageStyles/SelectionMenu.css" rel="stylesheet" type="text/css">  <!--Selection pop up menu style sheet  -->
+
+<div id="SuperContainer" class="d-flex flex-column justify-content-center align-items-start"> 
+         <div id="LogoAndSearchBarContainer" class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div id="LogoArea" class="d-flex col-sm-12 col-md-12 col-lg-12 d-fex justify-content-center">
+                    <img src="~/Pics/SelectionPagePics/Logos/Logo.png" alt="NGTV" class="img-fluid">
+                </div>
+            <div id="SearchBarBox" class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center mt-3">
+                <div id="SearchBar justify-content-center">
+                    <p>This is a search bar</p>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="container mt-3">
+        <div class="row d-flex justify-content-center">
+                <div id="InfoAboutContentIsHere" class="d-flex flex-row">
+                @Html.Raw(Model.SelectionMenu);
+        </div>
+</div>
+</div>
+ <div class="container mt-3">
+     <div class="row">
+       <div id="Carousel" class="col-12 d-flex justify-content-center">
+                <div id="OuterBanner">  <!--Start of OuterBanner-->
+
+                    <div id="InnerBanner"> <!--Start of Inner-Banner-->
+
+                        <div id="LeftControl"> 
+
+
+                        </div>
+
+
+
+                    <div id="HighLightBox" class="d-flex justify-content-center align-items-center">  <!--Highlight box start-->
+                            <img id="HighLightBoxImage" src="~/Pics/SelectionPagePics/InnerBannerPics/YellowBorder2.png">
+                        </div> <!--Highlight box end-->
+                     <div id="RightControl">
+
+
+                     </div>
+
+
+
+                    </div> <!--End of Inner-Banner-->
+
+
+                    <div id="ItemOne" class="AllItems">
+                        <img src="~/Pics/SelectionPagePics/CarouselPics/Citizens.png">
+                    </div>
+                    <div id="CenterItem" class="AllItems">
+                        <img src="~/Pics/SelectionPagePics/CarouselPics/Sermons.png">
+                    </div>
+                    <div id="ItemThree" class="AllItems">
+                        <img src="~/Pics/SelectionPagePics/CarouselPics/tbtc.png">
+                    </div>
+                    <div id="ItemFour" class="AllItems">
+                        <img src="~/Pics/SelectionPagePics/CarouselPics/TheDailyCup.png">
+                    </div>
+                    <div id="ItemFive" class="AllItems">
+                        <img src="~/Pics/SelectionPagePics/CarouselPics/Notes.png">
+                    </div>
+                </div>  <!--end of of OuterBanner-->
+     </div>
+</div>
+</div>
+</div> <!--End of super Container-->
+<script src="~/js/SelectionPageJavaScript/Carousel.js"></script>
